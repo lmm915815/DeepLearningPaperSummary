@@ -9,11 +9,18 @@
 
 ## 3. inception模块
 1. module
-![inception模块](https://github.com/lmm915815/DeepLearningPaperSummary/blob/master/picture/inception%E6%A8%A1%E5%9D%97.png)
+![inception模块](picture/inception.png)
 
-2. 为什么需要 1 * 1、3 * 3、5 * 5的内核
+2. 为什么需要 `1 * 1，3 * 3，5 * 5`的内核
 
-`1. 基于方便考虑而不是必须这个大小`
-`2. `
+	1. 基于方便考虑而不是必须这个大小，卷积的pad分别是0、1、2，步长都是1。`eg:(7+2*0-1)/1 = (7+2*1-3)/1 = (7+2*2-5)/1 == 6`
+	2. 最大下采样可以尽可能的增加原始数据，防止梯度消失 
 
 3. 为什么需要加上1*1过滤器
+	1. 5 * 5的卷积核计算量比较大，在前面加上`1 * 1`卷积可以减少卷积的深度
+
+## 4. gooLeNet结构
+
+![gooLeNet网络结构](picture/goolenet.png)
+1. 中间有两个辅助分类器，在训练时，分类器的损失占比0.3；在推断时，直接丢弃两个辅助分类器
+2. 4个步长为2的最大下采样；depthConcat就是inception结构的分点
