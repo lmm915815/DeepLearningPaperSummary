@@ -9,7 +9,7 @@
 
 ## 3. inception模块
 1. module
-![inception模块](../picture/inception.png)
+![inception模块](picture/inception.png)
 
 2. 为什么需要 `1 * 1，3 * 3，5 * 5`的内核
 
@@ -21,6 +21,6 @@
 
 ## 4. gooLeNet结构
 
-![gooLeNet网络结构](../picture/goolenet.png)
+![gooLeNet网络结构](picture/goolenet.png)
 1. 中间有两个辅助分类器，在训练时，分类器的损失占比0.3；在推断时，直接丢弃两个辅助分类器
 2. 4个步长为2的最大下采样；depthConcat就是inception结构的分点

@@ -6,8 +6,8 @@
 1. 梯度饱和和梯度消失问题可以通过ReLU，小心的初始化和很小的学习率来解决
 2. BN通过矫正输入数据的均值为`0`和方差为`1`来把数据拉回到一致，同时也降低了初值的依赖，对dropout的依赖也大大降低
 3. `ε`(常量)是防止分母为0，`γ`，`β`分别是缩放尺度和偏移量
-![bn推到公式](../picture/bn.png)
-![bn的反向传导](../picture/debn.png)
+![bn推到公式](picture/bn.png)
+![bn的反向传导](picture/debn.png)
 
 ## 3. bn网络训练过程
 1. 训练
@@ -17,4 +17,4 @@
 	1.  固定参数，K等分
 	2.  按照公式计算y值
 	3.  
-![训练bn网络过程](../picture/trainbnnetwork.png)
+![训练bn网络过程](picture/trainbnnetwork.png)
