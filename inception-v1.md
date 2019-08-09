@@ -9,7 +9,7 @@
 
 ## 3. inception模块
 1. module
-![inception模块](picture/inception.png)
+![inception模块](https://github.com/lmm915815/DeepLearningPaperSummary/blob/master/picture/inception.png)
 
 2. 为什么需要 `1 * 1，3 * 3，5 * 5`的内核
 
