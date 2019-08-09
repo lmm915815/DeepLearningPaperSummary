@@ -9,7 +9,11 @@
 
 ## 3. inception模块
 1. module
-![inception模块](.\picture\inception模块.png)
+![inception模块](https://github.com/lmm915815/DeepLearningPaperSummary/blob/master/picture/inception%E6%A8%A1%E5%9D%97.png)
 
-2. 为什么需要1*1、3*3、5*5的内核
+2. 为什么需要 1 * 1、3 * 3、5 * 5的内核
+
+`1. 基于方便考虑而不是必须这个大小`
+`2. `
+
 3. 为什么需要加上1*1过滤器
